@@ -1,0 +1,13 @@
+NPM
+-> bcrypt                        - used to hash our passwords
+->mongoose-aggregate-paginate-v2 - used to insert plugins
+->jsonwebtoken                   - libary for tokens [ creates tokens]  [ search in web "JWT.io"]
+                                   [Jwt is a bearer token] - means whoever has the token - we send data to them
+
+
+
+
+------------------
+In "https://www.npmjs.com/"
+->middleware -> hooks 
+  1)pre hook [runs the hook just before saving the data]
