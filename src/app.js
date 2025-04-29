@@ -16,4 +16,16 @@ app.use(express.urlencoded({extended:true ,limit: "16kb" }))   // to accept or p
 app.use(express.static("public"))                  // to store files and folders in "public" folder
 app.use(cookieParser())                           // to access cookies from user browser 
 
+
+//routes
+
+import userRouter from "./routes/user.routes.js"
+
+
+// routes declaration
+app.use("/api/v1/users",userRouter)    // we are creating an API of version 1(v1)
+
+// http://localhost:8000/api/v1/users/register
+
+
 export { app }
